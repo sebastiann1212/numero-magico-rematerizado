@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background:linear-gradient(to right, white,#006fbf);
+}
+.menubar{
+    display: flex;
+    background-color: #ffffff;
+    top:0;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px black;
+}
+
+.menubar ul{
+    display: block;
+    list-style-type: none;  
+    overflow: hidden;
+    padding: 10px;
+}
+
+.menubar ul:hover{
+    list-style-type: none;  
+}
+.menubar  li{
+    float: left;
+    margin-left: 27px;
+}
+
+.menubar img{
+    width: 60px;
+    margin-left: 20px;
+}
+
+.menubar li a{
+
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.menubar li a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #06395e;
+
+}
+
+section{
+    display: flex;
+    min-height: 100vh;
+    box-sizing: border-box;
+    justify-content:center;
+    align-items: center;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px 8px 7px #06395e;
+    padding: 90px 40px;
+    background-color: white;
+
+
+}
+
+
+form input{
+    padding: 10px 55px;
+    margin-bottom: 9px;
+    text-align: center;
+}
+
+form input:focus{  
+    border: 3px solid #1187db;
+}
+
+form h1,p{
+    margin-bottom: 20px;
+}
+
+form p{
+    color: gray;
+}
+
+form button{
+    margin-top: 20px;
+    padding: 10px 2px;
+    border: 0;
+    background-color: #075892;
+    color: white;
+    box-shadow: 2px 2px rgb(0, 0, 0,0.4);
+}
+
+form button:hover{
+    background-color: white ;
+    color: #075892;
+}

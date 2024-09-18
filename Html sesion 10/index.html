@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero magico</title>
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <header>
+        <div class="menubar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="https://login-para-hojas-de-vida-f2zg-hv9opr54i.vercel.app/">Hojas de vida</a></li>
+                <li><a href="#">Opciones</a></li>
+                <li><a href="#">Acerca de</a></li>
+            </ul>
+            <img src="img/UNIVERSIDAD-DEL-MAGDALENA-1.jpg" alt="icono unimag" title="icono de la universidad">
+        </div>
+    </header>
+
+    <section>
+        <form action="#">
+            <h1>Numero magico:)</h1>
+            <p>Estoy pensando en un numero del 1 al 100...</p>
+            <label>
+                <input type="number" id="numIngresado" placeholder="Ingresa el numero ">
+            </label>
+
+            <button onclick="adivinarNumero() "  id="button">Adivinar</button>    
+            
+            </br>
+            <p id="resultado"></p>
+            </br>
+            <p id="historialIntentos"></p>
+             </br>
+            <p id="predictor"></p>
+            </br>
+            </br>
+            <p id="temporizador">Tiempo restante: 30 segundos</p>
+            
+            <button id="buttonReiniciar" onclick="reiniciarJuego()" style="display:none;">Jugar de nuevo</button> 
+
+        </form>
+    </section>
+
+    <audio controls  autoplay loop>
+        <source src="sources/pantera-rosa-.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
